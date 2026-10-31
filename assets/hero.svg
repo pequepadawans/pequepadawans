@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300"
+     viewBox="0 0 880 300" role="img" aria-label="pequepadawans — offensive security">
+  <title>pequepadawans — offensive security</title>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    /* Sin opacity:0 en la clase: si el navegador no ejecuta animaciones,
+       el texto queda visible en vez de desaparecer. */
+    .fade   { animation: fade .45s ease-out both; }
+    .appear { animation: fade .01s linear both; }
+    .blink  { animation: blink 1.1s steps(1) infinite; }
+    .type   { transform-box: view-box; }
+    @keyframes fade  { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes blink { 0%, 49%   { opacity: 1; }
+                        50%, 100% { opacity: 0; } }
+    @keyframes type  { from { transform: scaleX(0); }
+                        to   { transform: scaleX(1); } }
+    @keyframes scan  { from { transform: translateY(0); }
+                        to   { transform: translateY(220px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .fade, .appear { animation: none; }
+      .blink, .scan  { animation: none; }
+      .type          { animation: none; transform: none; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fef00" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#9fef00" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fef00" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#9fef00" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#9fef00" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#161d23" stroke-width="1"/>
+    </pattern>
+    <clipPath id="body">
+      <rect x="1" y="37" width="878" height="262" rx="13"/>
+    </clipPath>
+  <mask id="m1" maskUnits="userSpaceOnUse">
+    <rect class="type" x="30" y="64" width="88.4" height="24" fill="#fff"
+          style="transform-origin:30px 0px; animation:type .40s steps(9) .10s both"/>
+  </mask>
+  <mask id="m2" maskUnits="userSpaceOnUse">
+    <rect class="type" x="30" y="136" width="153.5" height="24" fill="#fff"
+          style="transform-origin:30px 0px; animation:type .45s steps(15) 1.00s both"/>
+  </mask>
+  <mask id="m3" maskUnits="userSpaceOnUse">
+    <rect class="type" x="30" y="208" width="125.6" height="24" fill="#fff"
+          style="transform-origin:30px 0px; animation:type .35s steps(13) 1.90s both"/>
+  </mask>
+  </defs>
+
+  <!-- ventana -->
+  <rect x="0.5" y="0.5" width="879" height="299" rx="14"
+        fill="#0b0f12" stroke="#21262d" stroke-width="1"/>
+  <path d="M0.5 14.5A14 14 0 0 1 14.5 0.5h851a14 14 0 0 1 14 14V37H0.5Z" fill="#11171c"/>
+  <line x1="1" y1="37.5" x2="879" y2="37.5" stroke="#21262d" stroke-width="1"/>
+
+  <!-- chrome -->
+  <circle cx="22" cy="19" r="5.5" fill="#ff5f56"/>
+  <circle cx="41" cy="19" r="5.5" fill="#ffbd2e"/>
+  <circle cx="60" cy="19" r="5.5" fill="#27c93f"/>
+  <text x="440.0" y="23" font-size="11.5" fill="#7d8590" text-anchor="middle">pequepadawans@github: ~</text>
+
+  <g clip-path="url(#body)">
+    <rect x="1" y="38" width="878" height="261" fill="url(#grid)" opacity="0.55"/>
+    <rect x="1" y="38" width="420" height="200" fill="url(#glow)"/>
+    <rect class="scan" x="1" y="38" width="878" height="34" fill="url(#scan)" opacity="0.13"/>
+  <text x="30" y="80" font-size="15.5" fill="#9fef00" mask="url(#m1)">$ whoami</text>
+  <text x="30" y="112" font-size="15.5" fill="#c9d1d9" class="fade" style="animation-delay:.60s">daniel calvo<tspan fill="#7d8590"> · offensive security</tspan></text>
+  <text x="30" y="152" font-size="15.5" fill="#9fef00" mask="url(#m2)">$ cat focus.txt</text>
+  <text x="30" y="184" font-size="15.5" fill="#c9d1d9" class="fade" style="animation-delay:1.55s">active directory <tspan fill="#7d8590">·</tspan> windows internals <tspan fill="#7d8590">·</tspan> c2 <tspan fill="#7d8590">·</tspan> evasion</text>
+  <text x="30" y="224" font-size="15.5" fill="#9fef00" mask="url(#m3)">$ ls ~/certs</text>
+  <g class="fade" style="animation-delay:2.35s">
+    <text y="256" font-size="15.5" fill="#9fef00" letter-spacing="0.5"><tspan x="30.0">CRTO</tspan><tspan x="93.2">CPTS</tspan><tspan x="156.4">CWI-RTO</tspan><tspan x="249.0">CPIA</tspan><tspan x="312.2">CRT-ID</tspan><tspan x="395.0">AZRTS</tspan></text>
+  </g>
+  <g class="appear" style="animation-delay:2.55s">
+    <rect x="30" y="262" width="9" height="17" fill="#9fef00" class="blink"/>
+  </g>
+  <line x1="588" y1="66" x2="588" y2="252" stroke="#21262d" stroke-width="1"/>
+  <text x="620" y="84" font-size="10" fill="#7d8590" letter-spacing="2.4">STATUS</text>
+  <circle cx="624" cy="106" r="4" fill="#9fef00">
+    <animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="636" y="111" font-size="13" fill="#c9d1d9">open to work</text>
+
+  <text x="620" y="148" font-size="10" fill="#7d8590" letter-spacing="2.4">LOCATION</text>
+  <text x="620" y="172" font-size="13" fill="#c9d1d9">Madrid, ES</text>
+
+  <text x="620" y="208" font-size="10" fill="#7d8590" letter-spacing="2.4">HACK THE BOX</text>
+  <text x="620" y="232" font-size="13" fill="#c9d1d9">Top 100 <tspan fill="#7d8590">·</tspan> Spain</text>
+  </g>
+</svg>
