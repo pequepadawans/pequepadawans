@@ -41,7 +41,7 @@ attack paths. Top 100 in Spain on Hack The Box.
 
 | Certification | Issuer |
 | :--- | :--- |
-| CRTO — Certified Red Team Operator | Zero-Point Security |
+| CRTO — Certified Red Team Operator — [review](https://pequepadawans.pages.dev/posts/crto-review) | Zero-Point Security |
 | CPTS — Certified Penetration Testing Specialist | Hack The Box |
 | CWI-RTO — Certified Windows Internals Red Team Operator | CyberWarfare Labs |
 | CPIA — Certified Process Injection Analyst | CyberWarfare Labs |
@@ -59,6 +59,7 @@ attack paths. Top 100 in Spain on Hack The Box.
 
 Lab notes, exam reviews and tooling write-ups:
 
+- [CRTO review](https://pequepadawans.pages.dev/posts/crto-review)
 - [CPTS review — the exam, the flags, the burnout](https://pequepadawans.pages.dev/posts/cpts-review)
 - [Hermes: a self-improving AI agent on an old laptop](https://pequepadawans.pages.dev/posts/hermes-ai-secretary)
 - [Hello world](https://pequepadawans.pages.dev/posts/hello-world)
